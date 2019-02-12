@@ -13,6 +13,9 @@ public class UpdateWorkspaceCommand implements Command {
         MaskedArgumentListBuilder arguments = new MaskedArgumentListBuilder();
 
         arguments.add("update");
+        arguments.add("--override");
+        arguments.add("--dontmerge");
+        arguments.add("--ignorechanges");
         arguments.add(workFolder);
         
         return arguments;
